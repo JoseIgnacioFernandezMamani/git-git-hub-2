@@ -1,0 +1,64 @@
+Ejemplo del archivo .gitignore
+# comentario
+# .gitignore es un archivo colocado en la carpeta raiz del proyecto, se encarga de excluir archivos y directorios que no se van a incluir en el repositorio remoto.
+# dato importante -> .gitignore define que excluir para los procesos de "git commit"(guardar los archivos en el repositorio local) y "git add" (guardar los archivoa en el area de preparacion)
+# solo en esos casos git leera y tomara en cuenta lo estipulado en .gitignore. 
+
+
+
+# sintaxis de exclusion de .gitignore
+
+# ignorara un archivo ubicado en el directorio raiz
+    index.html
+# ignorar un directorio 
+    /node_modules
+# ignorar un directorio y sus contenidos
+    /node_modules/.bin/
+#  ignorar solo el contenido del directorio y no afectar a los subdirectorios dentro de el
+    /src/*
+
+# comodines
+    * -> coincide con cualquier caracter
+    ? -> coincide solo con un caracter
+    [abcde] -> coindice con uno de los caracteres dentro del corchete.
+
+# interesante pero es todo lo necesario, colocar mas seria ser exaustivamente especifico e inecesario.
+
+
+
+
+# package.json
+el archivo contiene:
+
+- archivo que contiene la lista de dependencias del proyecto.
+- script, que pueden ser personalizados para automatizar tareas comunes como; iniciar el servidor, ejecutar pruebas, compilar archivos, etc.
+- se pueden incluir configuraciones especificas para el proyecto
+
+# Tema que me ha llamado la atencion:
+
+# ssh key
+con el comando:
+ssh-keygen -t rsa -b 4096 -C "ejemplo@gmail.com"
+se crea una clave ssh rsa de 4096 bits, al generar la clave se generan 2 claves la clave privada almacenada en mi sistema local y la clave publica para compartirse con otros usuarios, las claves estan relacionadas matematicamente, los mensajes cifrados con la clave publica solo pueden ser decifrados con ayuda de la clave privada.
+
+# como funciona ?
+
+-> al dividir tu clave en 2, la clave publica (.pub) sera enviada al servidor y este lo usara para cifrar mensajes de desafio (que buscan autenticar nuestra identidad), cuando recibimos el mensaje de desafio lo deciframos con nuestra clave privada y enviamos una respuesta, de esta manera demostramos nuestra identidad, y es la razon por la que se usa claves "ASIMETRICAS".
+
+#que buen dato, o no daniel ? ,'-)
+
+
+
+
+
+
+
+
+
+# comodines
+
+# * para buscar coindidencias //como en bash
+# / ruta relativa al proyecto
+# 
+
+#
